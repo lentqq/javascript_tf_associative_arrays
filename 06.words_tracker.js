@@ -8,7 +8,7 @@ function wordsTracker(array) {
 
     for (let word of array) {
         if (map.has(word)) {
-           let values = map.get(word) +1;
+           let values = map.get(word) + 1;
            map.set(word, values);
         }
     }
