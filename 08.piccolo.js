@@ -18,7 +18,7 @@ function piccolo(input) {
         }
     }
     let sortedCars = cars.sort((a, b) => a.localeCompare(b));
-   
+
     if (cars.length <= 0) {
         console.log('Parking Lot is Empty');
     }
