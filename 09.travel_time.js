@@ -11,7 +11,7 @@ function travelTime(input) {
         }
         else {
             let existingTown = countriesMap.get(country);
-
+            
             if (existingTown.has(town)) {
                 let existingPrice = existingTown.get(town);
 
@@ -29,7 +29,7 @@ function travelTime(input) {
     for (let [country, townsMap] of sortedCountries) {
 
         let sortedTowuns = [...townsMap].sort((a, b) => a[1] - b[1]).map(element => `${element[0]} -> ${element[1]}`);
-        console.log(`${country} -> ${sortedTowuns.join(' ')}`);
+        console.log(`${country} -> ${sortedTowuns}`);
     }
 }
 
